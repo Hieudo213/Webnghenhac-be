@@ -39,6 +39,7 @@ public class CategoryService {
         newCategory.setName(category.getName());
         newCategory.setDescription(category.getDescription());
         newCategory.setPicture(defaultPicture.get());
+        newCategory.setIsValid(false);
         this.categoryRepository.save(newCategory);
         return newCategory;
     }

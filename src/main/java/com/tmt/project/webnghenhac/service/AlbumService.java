@@ -113,7 +113,6 @@ public class AlbumService {
                     return a;
                 }).collect(Collectors.toList())
         );
-        realAlbum.setStatus(true);
         this.albumRepository.save(realAlbum);
         return realAlbum;
     }
